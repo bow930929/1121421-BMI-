@@ -91,10 +91,11 @@ namespace _1121421_BMI計算機
 
             }
 
-                strResult = strResultList[ResultIndex];
-            colorList[ResultIndex] = colorResult;
+            strResult = strResultList[ResultIndex];
+            colorResult = colorList[ResultIndex];
 
-            this.lblResult.Text = $"{bmi} ({strResultList})";
+            lblResult.Text = $"{bmi:F2} ({strResult})";
+            lblResult.BackColor = colorResult;
             
         }
 
